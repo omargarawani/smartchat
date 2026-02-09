@@ -7,9 +7,9 @@ The goal is to separate model inference from the user interface, simulating a re
 🚀 Project Overview
 Architecture
 Local Machine (Streamlit UI)
-        |
-        |  HTTP Requests (ngrok)
-        v
+|
+|  HTTP Requests (ngrok)
+v
 Kaggle GPU (FastAPI + LLM)
 
 
@@ -107,8 +107,8 @@ import requests
 URL = "https://YOUR_NGROK_LINK/generate"
 headers = {"Authorization": "Bearer secret123"}
 payload = {
-    "prompt": "Who is Lionel Messi?",
-    "max_length": 300
+"prompt": "Who is Lionel Messi?",
+"max_length": 300
 }
 
 res = requests.post(URL, headers=headers, json=payload)
